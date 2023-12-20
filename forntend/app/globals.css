@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.socialbtn {
+  @apply flex h-10 w-10 items-center justify-center rounded-lg  bg-[#212425];
+
+}
+.socialbtn:hover {
+ 
+  @apply bg-gradient-to-tr from-primary to-secondary text-white;
+}
+.about-box {
+  @apply flex gap-4 border border-gray-500 rounded-xl p-6 ;
+}
+.nav-item{
+  @apply w-full h-20 rounded-[10px] cursor-pointer font-medium mx-2.5 text-sm  text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out hover:text-white bg-[#212425]  hover:bg-gradient-to-r from-primary to-secondary ;
+}
+.nav-item-active{
+  @apply w-full h-20 rounded-[10px] cursor-pointer font-medium mx-2.5 text-sm  text-[#A6A6A6] justify-center flex flex-col items-center transition-all duration-300 ease-in-out hover:text-white bg-[#212425]  hover:bg-gradient-to-r from-primary to-secondary  lg:text-white lg:bg-gradient-to-r ;
+}
